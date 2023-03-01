@@ -9,7 +9,7 @@ const Navbar = () => {
     <div>
     <nav class="navbar">
 
-<Heading as='h1' size='2xl' fontWeight="40">WearOutlet</Heading>
+<Link to='/'><Heading as='h1' size='2xl' fontWeight="40">WearOutlet</Heading></Link>
 <UnorderedList class="nav-links">
 <Input type="checkbox" id="checkbox_toggle" />
 <label for="checkbox_toggle" class="hamburger">&#9776;</label>

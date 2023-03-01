@@ -1,9 +1,19 @@
-import AllRoutes from './Components/Routes/AllRoutes';
+import React,{ lazy, Suspense } from 'react';
 import "./Global.css"
+import Loader from './Components/Loader/Loader';
+const AllRoutes= lazy(()=>import("./Components/Routes/AllRoutes"))
 function App() {
   return (
     <div className="App">
-     <AllRoutes />
+    <Suspense 
+    fallback={
+         <div>
+          <Loader />
+         </div>
+    }
+    >
+      <AllRoutes />
+    </Suspense>
     </div>
   );
 }
