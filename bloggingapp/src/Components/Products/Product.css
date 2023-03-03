@@ -1,4 +1,5 @@
-.product-list{
+/* .product-list{
+    display: flex;
     margin-top: 100px;
 }
 .toolbar-data{
@@ -40,11 +41,328 @@
     cursor: pointer;
     outline: none;
     border: none;
+} */
+/* 
+.grid-data{
+    display: grid; */
+    /* grid-template-columns: repeat(auto-fit,minmax(min(100%,150px),1fr)); */
+    /* grid-template-columns: repeat(4,1fr);
+    gap: 20px;
+    padding-left: 13px;
+} */
+/* 
+.discount{
+   position: absolute;
+   z-index: 2;
+ 
+}
+.discount .discount-img{
+    max-width: 100%;
+    height: auto;
+    border: 0;
+    overflow-clip-margin: content-box;
+    overflow: clip;
+    border: none;
+    outline: none;
+}
+.discount .save{
+    font-weight: 900;
+    position: absolute;
+    right: 17px;
+    top: 20px;
+    font-size: 11px;
+    width: 60px;
+    transform: rotate(-45deg);
+}
+.offer-img{
+    width: 100%;
+}
+.offer-img .product-img{
+    bottom: 0;
+    display: block;
+    left: 0;
+    margin: auto;
+    right: 0;
+    top: 0;
+    width: auto;
+}
+.product-details{
+    position: relative;
+    text-align: center;
+}
+.product-price{
+    margin: 10px 0 25px;
+    text-align: center;
+   font-size: 16px;
+}
+.mrp{
+    margin: 10px 20px;
+    text-decoration: line-through;
+    font-size: 16px;
+}
+.right-side{
+    width: 80%;
 }
 
-.grid-data{
+
+.left-side{
+    width: 20%;
+    border-right: 1px solid red;
+}
+.filter-column{
+    display: flex;
+    flex-direction:column;
+}
+@media (max-width:768px){
+    .left-side{
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        background-color: red;
+        box-shadow:0 -1px 12px hsla(174,63%,0.15);
+        width: 100%;
+        height: 4rem;
+        display: 0 1rem;
+        align-items: center;
+        border-radius: 1.25rem 1.25rem 0 0;
+        transition: 0.4s;
+    }
+    .grid-tab{
+      position: relative;
+      left: 50%;
+    }
+    .sort-data{
+        position: fixed;
+        left: 200px;
+        bottom: 0;
+        color: #fff;
+        height: -150px
+    }
+    .sort-data option{
+        color: #fff;
+    }
+} */
+
+.sidebar-title{
+    font-size: 26px;
+}
+.sidebar .widget{
+    margin: 20px 0;
+}
+.sidebar label,.sidebar .price-range{
+    display: flex;
+    cursor: pointer;
+    justify-content: space-between;
+}
+.sidebar label span{
+    font-weight: 500;
+}
+.sidebar label .icons{
+    font-size: 26px;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.sidebar .list-block ul{
+    padding-left: 15px;
+    margin-top: 20px;
+    height: 230px;
+}
+.scrollto:not(.initial){
+    --display:grid;
+    padding: 0;
+    overflow: unset;
+    scroll-snap-type: unset;
+    overscroll-behavior-inline: unset;
+}
+.scrollto{
+    width: unset;
+}
+input[type='range']{
+    width: 100%;
+    -webkit-appearance: none;
+}
+input[type='range']:focus{
+    outline: none;
+}
+input[type='range']::-webkit-slider-runnable-track{
+    width: 100%;
+    height: 5px;
+    cursor: pointer;
+    box-shadow: none;
+    border: 0;
+}
+input[type='range']::-webkit-slider-thumb{
+    z-index: 2;
+    position: relative;
+    height: 18px;
+    width: 18px;
+    top: -5px;
+    background-color: green;
+    cursor: pointer;
+    -webkit-appearance: none;
+    border-radius: 50%;
+}
+.sidebar .price-range {
+    font-size: 18px;
+}
+.sidebar .widget .accord{
+    padding-right: 15px;
+    max-height: 0;
+    opacity: 0;
+    visibility: hidden;
+    overflow: hidden;
+    transform: all 0.3s ease;
+}
+.sidebar .widget input:checked ~ div{
+    max-height: 1000px;
+    opacity: 1;
+    visibility: visible;
+}
+
+@media (min-width:992px) {
+   .sidebar,.close-trigger{
+    display: none;
+
+   }    
+}
+
+
+/* filter */
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+.section{
+    display: flex;
+}
+.filter-data{
+    margin-left: 100px;
+    padding-bottom: 20px;
+    margin-top: 40px;
+    width: 19%;
+    /* position: sticky; */
+}
+.data-flex{
+    /* width:px; */
+    justify-content: space-between;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.data-details{
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.data-flex .range-track{
+    /* width: 200px; */
+}
+.data-flex-name{
+    font-size: 17px;
+}
+.price-range{
+    margin-top: 10px;
+    justify-content: space-evenly;
+    /* width: 200px; */
+}
+.price-range span{
+    justify-content: space-between;
+    padding-left: 30px;
+}
+.right-data{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+}
+.top-data{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrp;
+    justify-content: space-evenly;
+}
+.grid-tab{
+    width: auto;
+    margin: 0 auto;
+
+}
+.grid-tab-btn{
+    border: 0;
+    outline: none;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    height: 35px;
+    width: 23px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+.btn{
+    height: 35px;
+    width: 23px;
+}
+.bottom-data{
     border: 1px solid gray;
+}
+
+.grid-data-details{
     display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(min(100%,150px),1fr));
+    grid-template-columns: repeat(auto-fit,minmax(min(100%,250px),1fr));
+     /* grid-template-columns: repeat(4,1fr); */
     gap: 20px;
+    padding-left: 13px;
+} 
+
+.discount{
+   position: absolute;
+   z-index: 2;
+ 
+}
+.discount .discount-img{
+    max-width: 100%;
+    height: auto;
+    border: 0;
+    overflow-clip-margin: content-box;
+    overflow: clip;
+    border: none;
+    outline: none;
+}
+.discount .save{
+    font-weight: 900;
+    position: absolute;
+    right: 17px;
+    top: 20px;
+    font-size: 11px;
+    width: 60px;
+    transform: rotate(-45deg);
+}
+.offer-img{
+    width: 100%;
+}
+.offer-img .product-img{
+    bottom: 0;
+    display: block;
+    left: 0;
+    margin: auto;
+    right: 0;
+    top: 0;
+    width: auto;
+}
+.product-details{
+    position: relative;
+    text-align: center;
+}
+.product-price{
+    margin: 10px 0 25px;
+    text-align: center;
+   font-size: 16px;
+}
+.mrp{
+    margin: 10px 20px;
+    text-decoration: line-through;
+    font-size: 16px;
 }

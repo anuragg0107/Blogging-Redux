@@ -108,7 +108,7 @@ import {
                   }}
                 />
                 <IconButton
-                  bg={useColorModeValue('green.400', 'green.800')}
+                  bg={useColorModeValue('green.400', 'green.400')}
                   color={useColorModeValue('white', 'gray.800')}
                   _hover={{
                     bg: 'green.600',

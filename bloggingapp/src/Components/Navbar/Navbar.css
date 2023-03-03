@@ -72,7 +72,10 @@
     .cart-data div{
         display: flex;
     }
-        
+      
+    .toggleButton{
+        background-color: black;
+    }
       
      @media (max-width: 768px) {
         
