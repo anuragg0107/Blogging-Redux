@@ -5,7 +5,7 @@ import "./Error.css"
 const Error = () => {
   return (
     <div>
-      <Box className='main-content'>
+      <Box className='main-content1'>
       <Heading as='h2' textAlign={'center'} size='2xl'>404</Heading>
         <Heading  as='h2' fontWeight={'500'} textAlign={'center'} size='2xl'>UH OH! You're lost.</Heading>
         <Text fontSize={'20px'}>

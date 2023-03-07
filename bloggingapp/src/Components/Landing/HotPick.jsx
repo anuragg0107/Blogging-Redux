@@ -45,7 +45,6 @@ const HotPick = () => {
         // textShadow:"0 0 20px black",
         fontWeight:"400",
         fontSize:"20px",
-        color:"#000"
     }
     let settings={
         infinite:true,
@@ -94,7 +93,7 @@ const HotPick = () => {
     };
   
     useEffect(()=>{
-    axios.get("https://trips-villas.onrender.com/posts").then((res)=>{
+    axios.get("https://product-api-46mq.onrender.com/hotpicks").then((res)=>{
         setData(res.data)
     })
     },[])
@@ -108,11 +107,9 @@ const HotPick = () => {
     return(
         <Box maxW={"250px"} _hover={{cursor:"pointer"}} maxH="140px" sx={boxStyle}
         key={el.id} onClick={()=>navigate("/products")}>
-        <Image src={el.img}
-            alt={el.location} filter="auto" brightness={"70%"}
-        width="90%" height={"140px"}  />
-         <Text>{el.location} </Text>
-        <Text fontSize={"14px"}>  {el.text} </Text>
+        <Image src={el.image}
+            alt={el.location} filter="auto" brightness={"70%"} loading='lazy'   />
+        <Text textAlign={'center'} fontSize={"16px"} pt='10px' >{el.title} </Text>
         </Box>
     )})}
     </Slider>

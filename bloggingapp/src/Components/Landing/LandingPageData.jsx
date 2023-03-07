@@ -14,7 +14,7 @@ const LandingPageData = () => {
         <Image src='https://www.forevernew.co.in/media/wysiwyg/home/Forever_New_LINKS_Desktop_1_.jpg' alt='refer' />
     </Box>
     <Box>
-        <Heading as='h2' size='xl' fontWeight={'400'} textAlign='center'>HOT PICKS</Heading>
+        <Heading as='h2' size='xl' mb='25px' mt='25px' fontWeight={'400'} textAlign='center'>HOT PICKS</Heading>
       <HotPick />
     </Box>
    <Box className="shop-data">

@@ -1,0 +1,19 @@
+    .icons{
+        margin-top:4px;
+        height: 20px;
+        height: 20px;
+        margin-top: 4px;
+    }
+    .drawer_name{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+     @media (max-width: 768px) {
+        .drawer_name{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+}

@@ -3,12 +3,13 @@ import { createContext, useContext, useEffect, useReducer } from "react";
 import reducer from "../Reducers/Productreducer";
 
 const AppContext=createContext()
-const API='https://dotandkey-api.vercel.app/posts'
+const API=`https://product-api-46mq.onrender.com/products`
 const initialState={
     loading:false,
     error:false,
     products:[],
-    featureProducts:[]
+    featureProducts:[],
+    grid_view:[]
 }
 
 const AppProvider=({children})=>{
@@ -24,6 +25,7 @@ const AppProvider=({children})=>{
     catch(err){
         dispatch({type:'GET_PRODUCT_FAILURE'})
     }
+    
     }
     useEffect(()=>{
         getProducts(API)

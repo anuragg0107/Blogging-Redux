@@ -15,7 +15,7 @@ const Login = () => {
     <Navbar />
     </Box>
     <Box className="gif">
-      <Image loading='lazy' src='https://www.riddle.com/imageservice/q_80,f_auto,c_fill,w_960,h_540/wohqesmdcg21qa5pqvjk' al='gif' />
+      <Image loading='lazy' src='https://www.riddle.com/imageservice/q_80,f_auto,c_fill,w_960,h_540/wohqesmdcg21qa5pqvjk' alt='gif' />
     </Box>
    
     <Box className="main-content">
@@ -53,14 +53,14 @@ const Login = () => {
 
     <Box className="right-content">
     <Heading as='h2' textAlign={'center'} fontWeight='460' textTransform='uppercase' mb='5px'>WearOutlet Allure</Heading>
-    <Text  mb='6px'>Discover all the ways we're have to make it your moment.</Text>
-    <Box className="right-data">
+    <Text textAlign={'center'}  mb='6px'>Discover all the ways we're have to make it your moment.</Text>
+    <Box className="right-data1">
       <Box className="right-data-box">
-        <span><img src='https://www.forevernew.co.in/pub/media/wysiwyg/reward/access.png' alt='image1' /></span>
+        <span textAlign='center'><img src='https://www.forevernew.co.in/pub/media/wysiwyg/reward/access.png' alt='image1' /></span>
       <Text className="text">As part of the Forever New family, you’ll gain VIP invitations to member-only events and in-store experiences</Text>
       </Box>
       <Box className="right-data-box">
-      <span><img src='https://www.forevernew.co.in/pub/media/wysiwyg/reward/spend.png' alt='image2' /></span>
+      <span textAlign='center'><img src='https://www.forevernew.co.in/pub/media/wysiwyg/reward/spend.png' alt='image2' /></span>
       <Text className="text">Make every purchase even more rewarding by unlocking milestones and earning every step of the way</Text>
       </Box>
       <Box className="right-data-box">
@@ -68,7 +68,7 @@ const Login = () => {
       <Text className="text" >Skip the queue with early access to new collection launches and sale events</Text>
       </Box>
       <Box className="right-data-box">
-      <span><img src='https://www.forevernew.co.in/pub/media/wysiwyg/reward/receive.png' alt='image4' /></span>
+      <span textAlign='center'><img src='https://www.forevernew.co.in/pub/media/wysiwyg/reward/receive.png' alt='image4' /></span>
       <Text className="text">Who doesn’t love a celebratory treat. We’ll help you make the most of your special day, with birthday & anniversary vouchers each year</Text>
       </Box>
     </Box>

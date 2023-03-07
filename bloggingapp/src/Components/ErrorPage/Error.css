@@ -1,5 +1,5 @@
-.main-content{
-    display: flex;
+.main-content1{
+    display: flex; 
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -10,8 +10,8 @@
 }
 .goHome{
     cursor: pointer;
-    /* background-color: brown; */
-    color: #fff;
+    background-color: brown;
+  color: #fff; 
     margin-top: 20px;
-    background: brown;
+    background: brown; 
 }
