@@ -25,28 +25,33 @@ const Register = () => {
     <Box className='container-data'>
      <Heading as={'h3'} size='xl' fontWeight={'400'} textAlign='center'>Create an account?</Heading>
     <FormControl className="form-data">
-    <Box className="inputBox">
+      <Box className="inputBox">
         <Input type='text' className="user" placeholder="Enter your first name" />
         {/* <span>Email</span> */}
       </Box>
       <Box className="inputBox">
-        <Input type='text' className="user" placeholder="Enter your last name" />
-        {/* <span>Email</span> */}
+        <Input type='number' className="user" placeholder="Enter your last name" />
+        {/* <span>Password</span> */}
+       
+        <Box className="inputBox">
+        <Input type='number' className="user" placeholder="Enter your mobile number" />
+        {/* <span>Password</span> */}
+
       </Box>
-      <Box className="inputBox">
-        <Input type='number' className="user" placeholder="Enter your number" />
-        {/* <span>Email</span> */}
+
       </Box>
       <Box className="inputBox">
         <Input type='email' className="user" placeholder="Enter your email" />
-        {/* <span>Email</span> */}
+        {/* <span>Password</span> */}
+
       </Box>
       <Box className="inputBox">
         <Input type='password' className="user" placeholder="Enter your password" />
         {/* <span>Password</span> */}
 
       </Box>
-       <Heading mb={'10px'} mt='10px' ml='10px' fontSize={'18px'} fontWeight='500'>If you already existing member? <Link to='/signin'>SignIn</Link></Heading>
+      
+       <Heading mb={'10px'} mt='10px' ml='10px' fontSize={'18px'} fontWeight='500'>Already our member? <Link to='/login'>Login</Link></Heading>
       <input type="submit" value="Send" className='sendBtn'
                      onClick={()=>
                      toast({
@@ -65,14 +70,14 @@ const Register = () => {
 
     <Box className="right-content">
     <Heading as='h2' textAlign={'center'} fontWeight='460' textTransform='uppercase' mb='5px'>WearOutlet Allure</Heading>
-    <Text  mb='6px'>Discover all the ways we're have to make it your moment.</Text>
-    <Box className="right-data">
+    <Text textAlign={'center'}  mb='6px'>Discover all the ways we're have to make it your moment.</Text>
+    <Box className="right-data1">
       <Box className="right-data-box">
-        <span><img src='https://www.forevernew.co.in/pub/media/wysiwyg/reward/access.png' alt='image1' /></span>
+        <span textAlign='center'><img src='https://www.forevernew.co.in/pub/media/wysiwyg/reward/access.png' alt='image1' /></span>
       <Text className="text">As part of the Forever New family, you’ll gain VIP invitations to member-only events and in-store experiences</Text>
       </Box>
       <Box className="right-data-box">
-      <span><img src='https://www.forevernew.co.in/pub/media/wysiwyg/reward/spend.png' alt='image2' /></span>
+      <span textAlign='center'><img src='https://www.forevernew.co.in/pub/media/wysiwyg/reward/spend.png' alt='image2' /></span>
       <Text className="text">Make every purchase even more rewarding by unlocking milestones and earning every step of the way</Text>
       </Box>
       <Box className="right-data-box">
@@ -80,7 +85,7 @@ const Register = () => {
       <Text className="text" >Skip the queue with early access to new collection launches and sale events</Text>
       </Box>
       <Box className="right-data-box">
-      <span><img src='https://www.forevernew.co.in/pub/media/wysiwyg/reward/receive.png' alt='image4' /></span>
+      <span textAlign='center'><img src='https://www.forevernew.co.in/pub/media/wysiwyg/reward/receive.png' alt='image4' /></span>
       <Text className="text">Who doesn’t love a celebratory treat. We’ll help you make the most of your special day, with birthday & anniversary vouchers each year</Text>
       </Box>
     </Box>
