@@ -1,8 +1,6 @@
-import {Box, Button,Image, FormControl, Heading, Input,Text, useToast} from "@chakra-ui/react"
+import {Box,Image, FormControl, Heading, Input,Text, useToast} from "@chakra-ui/react"
 import React from 'react'
 import "./Login.css"
-import {AiOutlineMail} from "react-icons/ai";
-import {RiLockPasswordFill} from "react-icons/ri";
 import { Link } from "react-router-dom";
 import Navbar from "../Navbar/Navbar";
 import Footer from "../Footer/Footer";
@@ -35,7 +33,7 @@ const Login = () => {
 
       </Box>
        <Heading mb={'10px'} mt='10px' ml='10px' fontSize={'18px'} fontWeight='500'>Don't have an account? <Link to='/register'>Register</Link></Heading>
-      <input type="submit" value="Send" className='sendBtn'
+      <button  className='sendBtn'
                      onClick={()=>
                      toast({
                       title:"Login Successful",
@@ -45,7 +43,7 @@ const Login = () => {
                       status:"success",
                      })
                      }
-                      /> 
+                      > Login</button> 
     </FormControl>
     </Box>
     </Box>

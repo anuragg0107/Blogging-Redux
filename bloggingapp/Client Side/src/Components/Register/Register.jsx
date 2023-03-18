@@ -1,8 +1,7 @@
-import {Box, Button,Image, FormControl, Heading, Input,Text, useToast} from "@chakra-ui/react"
+import {Box,Image, FormControl, Heading, Input,Text, useToast} from "@chakra-ui/react"
 import React from 'react'
 import "./Register.css"
-import {AiOutlineMail} from "react-icons/ai";
-import {RiLockPasswordFill} from "react-icons/ri";
+
 import { Link } from "react-router-dom";
 import Navbar from "../Navbar/Navbar";
 import Footer from "../Footer/Footer";
@@ -30,16 +29,16 @@ const Register = () => {
         {/* <span>Email</span> */}
       </Box>
       <Box className="inputBox">
-        <Input type='number' className="user" placeholder="Enter your last name" />
+        <Input type='text' className="user" placeholder="Enter your last name" />
         {/* <span>Password</span> */}
-       
+        </Box>
         <Box className="inputBox">
         <Input type='number' className="user" placeholder="Enter your mobile number" />
         {/* <span>Password</span> */}
 
       </Box>
 
-      </Box>
+     
       <Box className="inputBox">
         <Input type='email' className="user" placeholder="Enter your email" />
         {/* <span>Password</span> */}
@@ -52,7 +51,7 @@ const Register = () => {
       </Box>
       
        <Heading mb={'10px'} mt='10px' ml='10px' fontSize={'18px'} fontWeight='500'>Already our member? <Link to='/login'>Login</Link></Heading>
-      <input type="submit" value="Send" className='sendBtn'
+      <input type='submit' value='register'  className='sendBtn'
                      onClick={()=>
                      toast({
                       title:"Login Successful",
@@ -62,7 +61,7 @@ const Register = () => {
                       status:"success",
                      })
                      }
-                      /> 
+                     />
     </FormControl>
     </Box>
     </Box>

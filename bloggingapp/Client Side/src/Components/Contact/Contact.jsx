@@ -1,4 +1,4 @@
-import { Box, Button, FormControl, Heading, Input } from '@chakra-ui/react'
+import { Box, Heading, Input } from '@chakra-ui/react'
 import React from 'react'
 import Footer from '../Footer/Footer'
 import Navbar from '../Navbar/Navbar'
@@ -30,7 +30,7 @@ const Contact = () => {
         <Input type='text' name='name' placeholder='Enter your name' required autoComplete='off'  />
         <Input type='email' name='email' placeholder='Enter your email' required autoComplete='off' />
         <textarea placeholder='Enter your message' name='message' cols='30' rows={'30'} required autoComplete='off'></textarea>
-        <Input type='submit' value='send' className='button'  />
+        <button type='submit' value='send' className='button'  >send</button>
     </form>
    </Box>
    </Box>

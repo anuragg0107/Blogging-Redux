@@ -11,7 +11,7 @@
 .goHome{
     cursor: pointer;
     background-color: brown;
-  color: #fff; 
+  /* color: #fff;  */
     margin-top: 20px;
     background: brown; 
 }

@@ -10,12 +10,15 @@
     flex-wrap: wrap;
 }
 
-input[type='submit']{
+.button{
     cursor: pointer;
     transition: all 0.2s;
     margin-bottom: 6rem;
     background-color: brown;
     color: #fff;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-size: 19px;
 }
 textarea{
     padding-left:16px;
